@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* VisitingCard.css */
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-title {
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+}

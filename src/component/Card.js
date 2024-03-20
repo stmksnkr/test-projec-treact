@@ -4,19 +4,13 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 // import './App.css'; 
 
-function VisitingCard() {
+function VisitingCard({data}) {
 
 
     const [titlenameA,setTitlenameA]=useState('write here...')
     const  [titlenameB,setTitlenameB]=useState('write here...')
     const  [titlenameC,setTitlenameC]=useState('write here...')
     const [titlenameD,setTitlenameD]=useState('write here...')
-    const [data, setData] = useState({
-        InputA: '',
-        InputB: '',
-        InputC: '',
-        InputD: ''
-      });
     const handleNameChangeA = (event) => {
         const inputValue = event.target.value;
         
@@ -56,10 +50,7 @@ function VisitingCard() {
     function handleA()
     {
         let finaldata=titlenameA
-        setData({
-            ...data,
-            InputA: finaldata
-          });
+        
     }
     function handleB()
     {

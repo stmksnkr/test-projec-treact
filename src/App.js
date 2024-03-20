@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Test from './component/Test';
 import User from './component/User';
+import Userc from './class_component/User';
+import VisitingCard from './component/Card';
 function App() {
   const data =[ 
 
@@ -11,11 +13,10 @@ function App() {
 ]
   return (
     <div className="App">
+      <VisitingCard data={data} />
       {/* <Test data = {"Hello data"} /> */}
-      <User data = {data}/>
-      <h2>
-        Hello react
-      </h2>
+      {/* <User data = {data}/> */}
+      {/* <Userc/> */}
     </div>
   );
 }
