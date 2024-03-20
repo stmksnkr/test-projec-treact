@@ -75,6 +75,7 @@ function VisitingCard({ data }) {
           />
           <button onClick={handleA}>saveA</button>
         </div>
+        <ProfilePic/>
       </div>
       <div className="card">
         <div className="card-body">
@@ -86,6 +87,7 @@ function VisitingCard({ data }) {
           />
           <button onClick={handleB}>SaveB</button>
         </div>
+        <ProfilePic/>
       </div>
       <div className="card">
         <div className="card-body">
@@ -97,6 +99,7 @@ function VisitingCard({ data }) {
           />
           <button onClick={handleC}>SaveC</button>
         </div>
+        <ProfilePic/>
       </div>
       <div className="card">
         <div className="card-body">
@@ -108,6 +111,7 @@ function VisitingCard({ data }) {
           />
           <button onClick={handleD}>SaveD</button>
         </div>
+        <ProfilePic/>
       </div>
       <div className="card">
         <div className="card-body">
@@ -123,7 +127,7 @@ function VisitingCard({ data }) {
               ))}
             </ul>
           }
-          <ProfilePic/>
+          
         </div>
       </div>
     </div>
