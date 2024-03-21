@@ -3,16 +3,25 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import ProfilePic from "./ProfilePic";
+import { Button } from "bootstrap";
 // import './App.css';
 
-function VisitingCard({ data }) {
+function VisitingCard({ handleA }) {
   const [titlenameA, setTitlenameA] = useState("write here...");
   const [titlenameB, setTitlenameB] = useState("write here...");
   const [titlenameC, setTitlenameC] = useState("write here...");
   const [titlenameD, setTitlenameD] = useState("write here...");
+
+  const [data, setData] = useState([
+    { id: 1, name: "John", email: "abc@gmail" ,info : ''},
+    { id: 2, name: "peter", email: "def@gmail" },
+    { id: 3, name: "satyam", email: "ghf@gmail" },
+    { id: 4, name: "abc", email: "adudf@gmail" },
+    { id: 5, name: "xyz", email: "dwhf=sd@gmail" },
+    { id: 6, name: "pQrst", email: "gdwdehf@gmail" },
+  ]);
   const handleNameChangeA = (event) => {
     const inputValue = event.target.value;
-
     if (inputValue.length === 0) {
       setTitlenameA("write here...");
     } else {
@@ -46,91 +55,41 @@ function VisitingCard({ data }) {
       setTitlenameD(inputValue);
     }
   };
-  function handleA() {
-    let finaldata = titlenameA;
-  }
-  function handleB() {
-    let finaldata = titlenameB;
-    // console.log(finaldata)
-  }
-  function handleC() {
-    let finaldata = titlenameC;
 
-    // console.log(finaldata)
-  }
-  function handleD() {
-    let finaldata = titlenameD;
-
-    console.log(finaldata);
-  }
   return (
-    <div className="container mt-4">
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">A : {titlenameA}</h5>
-          <input
-            type="string"
-            placeholder="Entet value"
-            onChange={handleNameChangeA}
-          />
-          <button onClick={handleA}>saveA</button>
-        </div>
-        <ProfilePic/>
-      </div>
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">B : {titlenameB}</h5>
-          <input
-            type="string"
-            placeholder="Entet value"
-            onChange={handleNameChangeB}
-          />
-          <button onClick={handleB}>SaveB</button>
-        </div>
-        <ProfilePic/>
-      </div>
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">C : {titlenameC}</h5>
-          <input
-            type="string"
-            placeholder="Entet value"
-            onChange={handleNameChangeC}
-          />
-          <button onClick={handleC}>SaveC</button>
-        </div>
-        <ProfilePic/>
-      </div>
-      <div className="card">
-        <div className="card-body">
-          <h5 className="card-title">D : {titlenameD}</h5>
-          <input
-            type="string"
-            placeholder="Entet value"
-            onChange={handleNameChangeD}
-          />
-          <button onClick={handleD}>SaveD</button>
-        </div>
-        <ProfilePic/>
-      </div>
-      <div className="card">
-        <div className="card-body">
-          {
-            <ul className="list-group">
-              {data.map((item, index) => (
-                <li key={index} className="list-group-item">
-                  <div className="card">
-                    <div className="card-body card-index">{item.id}</div>
-                    <h1 className="card-txt">{item.name}</h1>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          }
-          
+    <>
+      <div>
+        <div className="card">
+          <div className="card-body">
+            {
+              <ul className="list-group">
+                {data.map((item, index) => (
+                  <li key={index} className="list-group-item">
+                    <div className="card">
+                      <div className="card-body card-index">{item.id}</div>
+                      <h1 className="card-txt">{item.name}</h1>
+                    </div>
+                    <div className="card">
+                      <div className="card-body">
+                        <h5 className="card-title">{item.name}: {titlenameB}</h5>
+                        <input
+                          type="string"
+                          placeholder="Entet value"
+                          onChange={handleNameChangeA}
+                        />
+                        {/* <button onClick={handleB}>SaveB</button> */}
+                      </div>
+                      <button>save</button>
+                      {/* <ProfilePic /> */}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            }
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

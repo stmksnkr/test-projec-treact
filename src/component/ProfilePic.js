@@ -39,6 +39,7 @@ function ProfilePic() {
           )}
         </div>
       </div>
+      <button>save</button>
     </div>
   );
 }
