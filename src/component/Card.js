@@ -9,16 +9,12 @@ import { Button } from "bootstrap";
 function VisitingCard({ handleA }) {
   const [titlenameA, setTitlenameA] = useState("write here...");
   const [titlenameB, setTitlenameB] = useState("write here...");
-  const [titlenameC, setTitlenameC] = useState("write here...");
-  const [titlenameD, setTitlenameD] = useState("write here...");
+  // const [titlenameC, setTitlenameC] = useState("write here...");
+  // const [titlenameD, setTitlenameD] = useState("write here...");
 
   const [data, setData] = useState([
     { id: 1, name: "John", email: "abc@gmail" ,info : ''},
-    { id: 2, name: "peter", email: "def@gmail" },
-    { id: 3, name: "satyam", email: "ghf@gmail" },
-    { id: 4, name: "abc", email: "adudf@gmail" },
-    { id: 5, name: "xyz", email: "dwhf=sd@gmail" },
-    { id: 6, name: "pQrst", email: "gdwdehf@gmail" },
+    { id: 2, name: "Johncena", email: "cena@gmail" ,info : ''}
   ]);
   const handleNameChangeA = (event) => {
     const inputValue = event.target.value;
@@ -37,24 +33,24 @@ function VisitingCard({ handleA }) {
       setTitlenameB(inputValue);
     }
   };
-  const handleNameChangeC = (event) => {
-    const inputValue = event.target.value;
+  // const handleNameChangeC = (event) => {
+  //   const inputValue = event.target.value;
 
-    if (inputValue.length === 0) {
-      setTitlenameC("write here...");
-    } else {
-      setTitlenameC(inputValue);
-    }
-  };
-  const handleNameChangeD = (event) => {
-    const inputValue = event.target.value;
+  //   if (inputValue.length === 0) {
+  //     setTitlenameC("write here...");
+  //   } else {
+  //     setTitlenameC(inputValue);
+  //   }
+  // };
+  // const handleNameChangeD = (event) => {
+  //   const inputValue = event.target.value;
 
-    if (inputValue.length === 0) {
-      setTitlenameD("write here...");
-    } else {
-      setTitlenameD(inputValue);
-    }
-  };
+  //   if (inputValue.length === 0) {
+  //     setTitlenameD("write here...");
+  //   } else {
+  //     setTitlenameD(inputValue);
+  //   }
+  // };
 
   return (
     <>
@@ -71,7 +67,7 @@ function VisitingCard({ handleA }) {
                     </div>
                     <div className="card">
                       <div className="card-body">
-                        <h5 className="card-title">{item.name}: {titlenameB}</h5>
+                        <h5 className="card-title">{titlenameA}</h5>
                         <input
                           type="string"
                           placeholder="Entet value"
