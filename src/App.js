@@ -7,13 +7,17 @@ import './App.css';
 // import ProfilePic from './component/ProfilePic';
 // import TestPro from './component/TestPro';
 import Navbar from './Zoutons/Navbar';
+import SearchAppBar from './Zoutons/Search';
 
 function App() {
   
 
   return (
     <div className="App">
+      {/* <SearchAppBar/> */}
       <Navbar/>
+      <SearchAppBar/>
+
       {/* <Navcomp/> */}
       {/* <TestPro/> */}
       {/* <ProfilePic/> */}
