@@ -8,6 +8,7 @@ import './App.css';
 // import TestPro from './component/TestPro';
 import Navbar from './Zoutons/Navbar';
 import SearchAppBar from './Zoutons/Search';
+import StoreFeature from './Zoutons/StoreFeature';
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
       {/* <SearchAppBar/> */}
       <Navbar/>
       <SearchAppBar/>
-
+      <StoreFeature/>
       {/* <Navcomp/> */}
       {/* <TestPro/> */}
       {/* <ProfilePic/> */}
