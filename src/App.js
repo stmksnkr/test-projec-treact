@@ -6,19 +6,26 @@ import './App.css';
 // import VisitingCard from './component/Card';
 // import ProfilePic from './component/ProfilePic';
 // import TestPro from './component/TestPro';
-import Navbar from './Zoutons/Navbar';
-import SearchAppBar from './Zoutons/Search';
-import StoreFeature from './Zoutons/StoreFeature';
+import Navbar from './Zoutons/Task1/Navbar';
+import SearchAppBar from './Zoutons/Task1/Search';
+import StoreFeature from './Zoutons/Task1/StoreFeature';
+
+
+import Signup from "./Zoutons/Task2/SignUp"
+import SignIn from "./Zoutons/Task2/Signin"
 
 function App() {
   
 
   return (
     <div className="App">
-      {/* <SearchAppBar/> */}
+      <Signup/>
+      <SignIn/>
+      <SearchAppBar/>
       <Navbar/>
       <SearchAppBar/>
       <StoreFeature/>
+      
       {/* <Navcomp/> */}
       {/* <TestPro/> */}
       {/* <ProfilePic/> */}
