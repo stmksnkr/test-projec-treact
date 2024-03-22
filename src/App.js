@@ -11,7 +11,6 @@ import SearchAppBar from './Zoutons/Task1/Search';
 import StoreFeature from './Zoutons/Task1/StoreFeature';
 import AuthDetails from './Zoutons/Task2/Authdetail';
 
-
 import Signup from "./Zoutons/Task2/SignUp"
 import SignIn from "./Zoutons/Task2/Signin"
 

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import SignIn from "../Task2/Signin";
 
 const Navbar = () => {
   return (
@@ -15,18 +17,22 @@ const Navbar = () => {
               alt="Amazon Logo"
             />
           </Link>
+          
         </div>
-      </div>
-      <div className="display-right-nav">
-        <h2>login</h2>
-        <h2>Register</h2>
-        <h2>Multi-lang-Drop-Down</h2>
+        <div className="flex-style" >
+        <div className="flex-style">
+          <h2>login </h2>
+        </div>
+        <div className="flex-style">
+          <h2>Register</h2>
+        </div>
+        <div className="flex-style">
+          <h2>Multi-lang</h2>
+        </div>
+        </div>
       </div>
       <div>
         <h1>Find best deals in india</h1>
-      </div>
-      <div className="header__search">
-        <input className="header__searchIn" type="text" />
       </div>
     </>
   );
