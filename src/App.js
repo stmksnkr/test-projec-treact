@@ -23,7 +23,6 @@ function App() {
       <Signup/>
       <SignIn/>
       <AuthDetails/>
-      <SearchAppBar/>
       <Navbar/>
       <SearchAppBar/>
       <StoreFeature/>
