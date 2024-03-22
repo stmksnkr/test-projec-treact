@@ -9,6 +9,7 @@ import './App.css';
 import Navbar from './Zoutons/Task1/Navbar';
 import SearchAppBar from './Zoutons/Task1/Search';
 import StoreFeature from './Zoutons/Task1/StoreFeature';
+import AuthDetails from './Zoutons/Task2/Authdetail';
 
 
 import Signup from "./Zoutons/Task2/SignUp"
@@ -21,11 +22,11 @@ function App() {
     <div className="App">
       <Signup/>
       <SignIn/>
+      <AuthDetails/>
       <SearchAppBar/>
       <Navbar/>
       <SearchAppBar/>
       <StoreFeature/>
-      
       {/* <Navcomp/> */}
       {/* <TestPro/> */}
       {/* <ProfilePic/> */}
