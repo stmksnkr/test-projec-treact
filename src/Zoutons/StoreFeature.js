@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function ResponsiveGrid() {
     const [ticket,setTicket] = React.useState(['N','P'])
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, margin:5 }}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {Array.from(Array(12)).map((_, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
