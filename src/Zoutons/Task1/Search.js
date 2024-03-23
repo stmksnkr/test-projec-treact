@@ -57,21 +57,14 @@ export default function SearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar sx={{ flexGrow: 1,  justifyContent:'left'}} >
-          <IconButton
-            size="medium"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-          </IconButton>
+          
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, marginRight:100}}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, marginRight:10}}
           >
-            Search Options
+            Find best deals in india
           </Typography>
           <Search sx={{ flexGrow: 1}}>
             <SearchIconWrapper>
